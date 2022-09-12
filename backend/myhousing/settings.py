@@ -43,10 +43,11 @@ INSTALLED_APPS = [
     # required
     'rest_framework',
     'rest_framework.authtoken',
+    'django_google_maps',
     # 'rest_auth',
     
     # our app
-    'manager',
+    'manager.apps.MainConfig',
 ]
 
 MIDDLEWARE = [
@@ -58,6 +59,14 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+# for authenticate token purpose
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ]
+}
 
 ROOT_URLCONF = 'myhousing.urls'
 
@@ -131,3 +140,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+GOOGLE_MAPS_API_KEY = ''
