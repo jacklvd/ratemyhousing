@@ -141,4 +141,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# TODO: figure out the way to use google api key
 GOOGLE_MAPS_API_KEY = ''
