@@ -35,7 +35,7 @@ class CustomAuthToken(ObtainAuthToken):
 
         return Response({"status":"bad request"}, status=status.HTTP_400_BAD_REQUEST)
 
-
+# For the sign-in page
 class UserViewSet(ModelViewSet):
     serializer_class = UserSerializer
     queryset = User.objects.all()
@@ -117,6 +117,8 @@ class UserViewSet(ModelViewSet):
             return Response({"status":"required fields missing"}, status=status.HTTP_400_BAD_REQUEST)
 
         return Response({"status":"bad request"}, status=status.HTTP_400_BAD_REQUEST)
+
+# TODO: Create API for search bar
 
 # TODO: create Google Map api
 class Rental:
