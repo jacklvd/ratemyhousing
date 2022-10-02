@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/main.css" rel="stylesheet" />
     <link href="../css/navbar.css" rel="stylesheet" />
+    <link href="../css/signin.css" rel="stylesheet" />
 
-    <title>Document</title>
+    <title>Sign In</title>
 </head>
 <body>
     <header>
@@ -20,7 +21,7 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./contact.html">Contact Us</a></li>
-                <li><a href="./signin.html">Sign In</a></li>
+                <li><a style="color:#E00122;" href="./signin.html">Sign In</a></li>
             </ul>
         </nav> 
 
@@ -31,11 +32,21 @@
             <span class="bar"></span>
             </div>
         </button>
-
     </header>
-    <section>
-        <h1>Link3</h1>
-    </section>
+
+    <div class="loginpage">
+        <h1>Welcome!</h1>
+        <h2>Login</h2>
+        <form class="loginform">
+            <div>
+                <input type="text" id="username" placeholder="Enter email" required>
+            </div>
+            <div>
+                <input type="password" id="password" placeholder="Enter password" required>
+            </div>
+            <input type="submit" value="Login" id="submitlogin">
+        </form>
+    </div>
 
     <footer>
         <h1>Rate My Housing</h1>
@@ -43,10 +54,7 @@
             Copyright &copy;JCC <br>
             Deployment [MM-DD--YYYY]
         </div>
-
     </footer>
-
-  
 
     <script src="../js/main.js"></script>
 

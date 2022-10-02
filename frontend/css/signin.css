@@ -1,0 +1,47 @@
+:root {
+    --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --font-heading: "Dancing Script", cursive;
+    --font-custom1: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+    --font-custom2: "Lato", sans-serif;
+    --font-flipcard: "Courier New", Courier, monospace;
+    --body-color: #333;
+    --uc-color-main: #E00122;
+    --uc-color-main2: #FFFFFF;
+    --uc-color-main3: #000000;
+    --theme-color4: #D2AE90;
+    --theme-color5: #DD7564;
+    --theme-color6: #A79687;
+    --theme-color7: #24262A;
+    --theme-color8: #133846;
+    --theme-color9: #2d2a32;
+    --theme-color10: #2d2a32;
+    --theme-color11: #343330;
+    --theme-color12: #2d2d2d;
+    --theme-color13: #121019;
+    --frontcard-color: #e4ff1a;
+    --backcard-color: #033860;
+    --border-color: #AEDFF2;
+    --b: 5px; /* thickness of the border*/
+    
+}
+
+
+.loginpage {
+    justify-content: center;
+    text-align: center;
+}
+
+.loginpage h1 {
+    color: var(--uc-color-main1);
+    padding-top: 30px;
+    font-size: 35px;
+}
+
+.loginpage h2 {
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.loginpage div {
+    padding-bottom: 10px;
+}
